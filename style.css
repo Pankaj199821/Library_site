@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for the form */
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(34, 30, 30, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Success Message */
+.submitmsg {
+    text-align: center;
+    font-size: 18px;
+    color: green;
+    display: none;
+}
+
+/* Library Image */
+.lib {
+    width: 175%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+
+/* Library Card Preview */
+.card {
+    margin-top: 10px;
+    padding: 20px;
+    background: #d1b3b3;
+    border: 2px dashed #007BFF;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-photo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #007BFF;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.card strong {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    input,
+    button {
+        font-size: 14px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
